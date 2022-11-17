@@ -79,7 +79,13 @@ typings/
 .next
 
 # Nuxt.js build / generate output
+node_modules
+*.log*
 .nuxt
+.nitro
+.cache
+.output
+.env
 dist
 
 # Gatsby files
