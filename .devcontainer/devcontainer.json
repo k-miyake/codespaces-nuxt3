@@ -18,13 +18,18 @@
     },
     "forwardPorts": [
         3000
-	],
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"Vue.volar",
-				"Vue.vscode-typescript-vue-plugin"
-			]
-		}
-	}
+    ],
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "app.vue"
+            ]
+        },
+        "vscode": {
+            "extensions": [
+                "Vue.volar",
+                "Vue.vscode-typescript-vue-plugin"
+            ]
+        }
+    }
 }
