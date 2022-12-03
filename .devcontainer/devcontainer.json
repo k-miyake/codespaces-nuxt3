@@ -1,35 +1,26 @@
 {
-    "name": "Node.js & TypeScript",
-    "image": "mcr.microsoft.com/devcontainers/typescript-node:18-bullseye",
-    "hostRequirements": {
-        "cpus": 4
-    },
-    "waitFor": "onCreateCommand",
-    "updateContentCommand": "npm install && npm run build",
-    "postCreateCommand": "",
-    "postAttachCommand": {
-        "server": "npm run dev"
-    },
-    "portsAttributes": {
-        "3000": {
-            "label": "Application",
-            "onAutoForward": "openPreview"
-        }
-    },
-    "forwardPorts": [
-        3000
-    ],
-    "customizations": {
-        "codespaces": {
-            "openFiles": [
-                "app.vue"
-            ]
-        },
-        "vscode": {
-            "extensions": [
-                "Vue.volar",
-                "Vue.vscode-typescript-vue-plugin"
-            ]
-        }
+  "name": "Node.js & TypeScript",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:18-bullseye",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "npm install && npm run build",
+  "postCreateCommand": "",
+  "postAttachCommand": "npm run dev",
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
     }
+  },
+  "forwardPorts": [3000],
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["app.vue"]
+    },
+    "vscode": {
+      "extensions": ["Vue.volar", "Vue.vscode-typescript-vue-plugin"]
+    }
+  }
 }
