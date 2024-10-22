@@ -1,6 +1,6 @@
 {
   "name": "Node.js & TypeScript",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:18-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bookworm",
   "hostRequirements": {
     "cpus": 2
   },
@@ -20,7 +20,10 @@
       "openFiles": ["app.vue"]
     },
     "vscode": {
-      "extensions": ["Vue.volar", "Vue.vscode-typescript-vue-plugin"]
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "Vue.volar"
+      ]
     }
   }
 }
